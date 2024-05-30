@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1022</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Plant Organelle Phylogenetic Platform</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(242, 242, 247);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>701</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>192</width>
+            <height>721</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="minimumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 162, 186);
+border-radius: 10px; /* 设置圆角半径 */  
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>  1. Species selection</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_endless.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="chlo">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Chloroplast</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="mito">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Mitochondria</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="minimumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 162, 186);
+border-radius: 10px; /* 设置圆角半径 */  
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>  2. Gene viewing</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_view-grid-list.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="geneview">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>View</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="minimumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 162, 186);
+border-radius: 10px; /* 设置圆角半径 */  
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>  3. Gene alignment</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_contrast-view.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="chlo_2">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Chloroplast</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="mito_2">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Mitochondria</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="minimumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 162, 186);
+border-radius: 10px; /* 设置圆角半径 */  
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <property name="text">
+                <string>  4. Construct tree</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_tree-list.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="iqtree">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>IQ-TREE</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="fasttree">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>FastTree</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bayes">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>MrBayes</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="paml">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>PAML</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="minimumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>161</width>
+                 <height>21</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(138, 162, 186);
+border-radius: 10px; /* 设置圆角半径 */  
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>  5. View tree</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_tree-two.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="viewtree_2">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Preview</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="viewtree">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>iTOL</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Trex">
+             <property name="minimumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>121</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+             </property>
+             <property name="text">
+              <string>Phylo</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="styleSheet">
+             <string notr="true">QTabBar::tab {  
+    background-color: rgba(0, 0, 0, 0); /* 透明背景 */  
+    color: rgba(0, 0, 0, 0); /* 透明文本 */  
+    min-width: 0;  
+    min-height: 0;  
+    padding: 0;  
+    margin: 0;  
+}
+QTabWidget::pane { /* The tab widget frame */  
+    border: none; /* Remove the border around the tab widget */  
+}  
+  
+QTabBar::tab {  
+    border: none; /* Remove the border around each tab */  
+    padding: 0px; /* Remove any padding around the tab text/icon */  
+    margin: 0px; /* Remove any margin around the tab */  
+    /* Other tab styling here */  
+}</string>
+            </property>
+            <property name="tabPosition">
+             <enum>QTabWidget::East</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>Tab 1</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>6</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="tubiao">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_tubiao.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPlainTextEdit" name="plainTextEdit">
+                    <property name="maximumSize">
+                     <size>
+                      <width>306</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(73, 108, 142);
+border: none;
+font-size: 14pt;</string>
+                    </property>
+                    <property name="plainText">
+                     <string>This project uses the Python GUI to build a fully automated platform for phylogenetic analysis of plant organelle genomes under Windows, aiming to integrate all of the above functions into a single workflow, allowing users to perform, store and manage their work in an efficient way, simplifying the phylogenetic analysis process and facilitating the relevant analysis of plant evolutionists. This project is of great significance for understanding plant growth and development, adaptation mechanisms, genetic evolution, and species diversity. This will not only help promote the development of the field of plant biology, but also provide an important theoretical basis and guidance for agricultural production, ecological protection and biodiversity conservation.</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/converted_tupian1.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/new/jiemian.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QTableWidget" name="table">
+                <property name="styleSheet">
+                 <string notr="true">border:none</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QLabel" name="conserved">
+                  <property name="text">
+                   <string>TextLabel</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="excel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Excel</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="mito_ali">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_12" stretch="0">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QLabel" name="label_13">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Please select the gene you want to use</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QPushButton" name="mito_select">
+                      <property name="minimumSize">
+                       <size>
+                        <width>121</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>121</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Select</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QLabel" name="label_14">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Please select the alignment method you need</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_14">
+                      <item>
+                       <widget class="QComboBox" name="pairWay">
+                        <property name="styleSheet">
+                         <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>MAFFT</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>ClustalW</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Muscle</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="mi_gen">
+                        <property name="minimumSize">
+                         <size>
+                          <width>121</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>121</width>
+                          <height>31</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Generate</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_15">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Alignment results</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPlainTextEdit" name="Res">
+                  <property name="textInteractionFlags">
+                   <set>Qt::NoTextInteraction</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="chlo_ali">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_16" stretch="0,0">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_16">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Please select the gene you want to use</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="chlo_select">
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>31</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>31</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Select</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_15">
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_17">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Please select the alignment method you need</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                    <item>
+                     <widget class="QComboBox" name="pairWay_2">
+                      <property name="styleSheet">
+                       <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>MAFFT</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ClustalW</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Muscle</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="pairWork">
+                      <property name="styleSheet">
+                       <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Conserved Sequence</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Complete genome</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="ch_gen">
+                      <property name="minimumSize">
+                       <size>
+                        <width>121</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>121</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Generate</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_13">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_18">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Alignment results</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPlainTextEdit" name="Res_2">
+                  <property name="textInteractionFlags">
+                   <set>Qt::NoTextInteraction</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <attribute name="title">
+              <string>Tab 2</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QTreeWidget" name="mi_tree">
+                <property name="styleSheet">
+                 <string notr="true">QTreeWidget { border: none; 
+}
+QHeaderView::section { background-color: transparent; }</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Mitochondria</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                 <widget class="QPushButton" name="mi_add">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="mi_list">
+                  <property name="styleSheet">
+                   <string notr="true">border:0px
+</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QTreeWidget" name="ch_tree">
+                <property name="styleSheet">
+                 <string notr="true">QTreeWidget { border: none; 
+}
+QHeaderView::section { background-color: transparent; }</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Chloroplast</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                 <widget class="QPushButton" name="ch_add">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="ch_list">
+                  <property name="styleSheet">
+                   <string notr="true">border:0px
+</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_5">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_18">
+                  <item>
+                   <widget class="QLabel" name="iqOutGroup">
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>OutGroup</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="iqGroupSelect">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                  <item>
+                   <widget class="QLabel" name="iqBootstrap">
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Bootstrap</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="bootSelect">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Ultrafast</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Standard</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>None</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                  <item>
+                   <widget class="QLabel" name="iqNumStrap">
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Num of Bootstrap</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="iqNum">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1000</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_21">
+                  <item>
+                   <widget class="QLabel" name="label_19">
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Models</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="mod">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>AUTO</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QPushButton" name="iqtree_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Generate</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_6">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_20">
+                  <property name="maximumSize">
+                   <size>
+                    <width>130</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>FastTree</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_24">
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Models</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="mods">
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>GTR</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>JTT</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>LG</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>WAG</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QPushButton" name="fasttree_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Generate</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_21">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_22">
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>ModelFinder</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QPushButton" name="modelfinder">
+                    <property name="minimumSize">
+                     <size>
+                      <width>121</width>
+                      <height>31</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>121</width>
+                      <height>31</height>
+                     </size>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Generate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPlainTextEdit" name="model_res">
+                    <property name="plainText">
+                     <string>Please click Generate!</string>
+                    </property>
+                    <property name="textInteractionFlags">
+                     <set>Qt::NoTextInteraction</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_7">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_23">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_22">
+                <item>
+                 <spacer name="verticalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                 <widget class="QLabel" name="label_23">
+                  <property name="text">
+                   <string>MrBayes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                  <item>
+                   <widget class="QLabel" name="iqOutGroup_2">
+                    <property name="text">
+                     <string>OutGroup</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="mbout">
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+}
+</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_25">
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Generations</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="gnum">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>100000</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_26">
+                  <item>
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Sampling Freq</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="SampFreq">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1000</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_27">
+                  <item>
+                   <widget class="QLabel" name="label_26">
+                    <property name="text">
+                     <string>Print Freq</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="printFreq">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_28">
+                  <item>
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>Number of Chains</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="numChains">
+                    <property name="styleSheet">
+                     <string notr="true">    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    background: transparent; 
+    border: 1px solid gray; 
+	border-color: #E5E5E5;
+	background-color: #FFFFFF;
+</string>
+                    </property>
+                    <property name="inputMask">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QPushButton" name="mrbayes">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Generatre</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_8">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_38">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_29">
+                  <item>
+                   <widget class="QLabel" name="label_28">
+                    <property name="text">
+                     <string>SeqType</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="seq">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_30">
+                  <item>
+                   <widget class="QLabel" name="label_29">
+                    <property name="text">
+                     <string>noisy</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="noisy">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_31">
+                  <item>
+                   <widget class="QLabel" name="label_30">
+                    <property name="text">
+                     <string>RateAncestor</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="rate">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_32">
+                  <item>
+                   <widget class="QLabel" name="label_31">
+                    <property name="text">
+                     <string>model</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="model">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_33">
+                  <item>
+                   <widget class="QLabel" name="label_32">
+                    <property name="text">
+                     <string>NSsites</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="ns">
+                    <property name="text">
+                     <string>[0]</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_34">
+                  <item>
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>CodonFreq</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="codon">
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_35">
+                  <item>
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>cleandata</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="clean">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_36">
+                  <item>
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>fix_alpha</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="fix">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_37">
+                  <item>
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>kappa</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="kappa">
+                    <property name="text">
+                     <string>4.54006</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QPushButton" name="paml_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>121</width>
+                    <height>31</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Generate</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="paml_res">
+                <property name="plainText">
+                 <string>Please generate IQ-TREE first!</string>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::NoTextInteraction</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_9">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_39">
+              <item>
+               <widget class="QWebEngineView" name="web1">
+                <property name="url">
+                 <url>
+                  <string>about:blank</string>
+                 </url>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_10">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_40">
+              <item>
+               <widget class="QWebEngineView" name="web2">
+                <property name="url">
+                 <url>
+                  <string>about:blank</string>
+                 </url>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_11">
+             <attribute name="title">
+              <string>页</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QGraphicsView" name="graphicsView"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(223, 223, 227);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>741</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="github">
+          <property name="minimumSize">
+           <size>
+            <width>141</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>141</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+          </property>
+          <property name="text">
+           <string>GitHub</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>141</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>141</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+          </property>
+          <property name="text">
+           <string>Manage</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="minimumSize">
+           <size>
+            <width>141</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>141</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+          </property>
+          <property name="text">
+           <string>About</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="minimumSize">
+           <size>
+            <width>141</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>141</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {  
+    background-color: rgb(178, 203, 229); /* 设置背景颜色，这里以绿色为例 */  
+    border: none; /* 移除边框 */  
+    border-radius: 15px; /* 设置圆角半径 */  
+    color: white; /* 设置文本颜色 */  
+    padding: 10px 20px; /* 设置内边距 */  
+}  
+  
+/* 当按钮被按下时的样式 */  
+QPushButton:pressed {  
+    background-color: rgb(159, 186, 214); /* 设置按下时的背景颜色，这里是稍暗的绿色 */  
+}</string>
+          </property>
+          <property name="text">
+           <string>Acknowledgment</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ziyuan/1.qrc"/>
+ </resources>
+ <connections/>
+</ui>

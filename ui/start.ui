@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>677</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Plant phylogenetic analysis platform</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(127, 115, 132);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="minimumSize">
+        <size>
+         <width>60</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+	background-color: rgb(202, 195, 212);
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>41</width>
+          <height>661</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color: rgb(229,227,221);
+	line-height:10px;
+	font: 22pt &quot;Cascadia Mono&quot;;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab {
+    background: rgba(255, 255, 255, 0);
+	color:rgb(255, 255, 255);
+	height:50px;
+	width:150px;
+}
+QTabBar::hover{
+	background-color: rgb(127, 115, 132);
+}
+QTabBar::tab:selected{
+	
+	background-color: rgb(215, 202, 177);
+}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="chloroplast">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(229, 227, 221);</string>
+        </property>
+        <attribute name="title">
+         <string>chloroplast</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTreeWidget" name="ch_tree">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Species information</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>25</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="ch_manage">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>                Species
+       management</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ch_add">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>         Add species</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ch_remove">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>        Clear species</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ch_view">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>          View genes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ch_next">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>                     Next</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="mitochondrial">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(229, 227, 221);</string>
+        </property>
+        <attribute name="title">
+         <string>mitochondria</string>
+        </attribute>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTreeWidget" name="mi_tree">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <column>
+            <property name="text">
+             <string>Species information</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>25</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="mi_manage">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>                Species
+       management</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="mi_add">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>         Add species</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="mi_remove">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>        Clear species</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="mi_view">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>          View genes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="mi_next">
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: rgb(188, 149, 117);
+border:none;
+border-radius:7px;
+color:white}
+QPushButton::hover {
+    background-color: rgb(226, 179, 141);
+}
+
+QPushButton::pressed {
+    background-color: rgb(158, 125, 99);
+}</string>
+               </property>
+               <property name="text">
+                <string>                     Next</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="Acknowledgements">
+        <attribute name="title">
+         <string>Acknowledgements</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(229, 227, 221);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>I would like to express my gratitude to Mr Bi who helped me during the writing of this thesis.
+我想要感谢帮助我编写这个程序的毕老师</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Author</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(229, 227, 221);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>260</y>
+              <width>54</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Boris Yu
+于伯睿</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

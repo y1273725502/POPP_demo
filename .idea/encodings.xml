@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d2266a1-8003-4558-aec3-005a39a52f14/console.sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2024-02-16-19-42-09/temp.fasta" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Capstone_project.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastTreeUi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brandNew.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch_find_pair_species.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch_next.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch_speciesManage.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch_viewAllGenome.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chloroplast_tax.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fas_to_nex.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/firstUI.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/geneSelection.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ggtree_demo.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mafftWay.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi_next.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tre_to_newick.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ui/GeneSelection.py" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

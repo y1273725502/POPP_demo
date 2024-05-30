@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="new">
+    <file>converted_tubiao.png</file>
+    <file>converted_tupian1.png</file>
+  </qresource>
+</RCC>

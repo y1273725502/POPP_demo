@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="new">
+    <file>jiemian.png</file>
+    <file>converted_contrast-view.png</file>
+    <file>converted_endless.png</file>
+    <file>converted_tree-list.png</file>
+    <file>converted_tree-two.png</file>
+    <file>converted_view-grid-list.png</file>
+    <file>converted_tubiao.png</file>
+    <file>converted_tupian1.png</file>
+  </qresource>
+</RCC>

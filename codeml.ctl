@@ -1,0 +1,13 @@
+seqfile = 2024-05-14-16-33-19\temp.fasta
+outfile = 2024-05-14-16-33-19\output_file
+treefile = 2024-05-14-16-33-19\temp.fasta.treefile
+noisy = 0
+verbose = True
+seqtype = 1
+CodonFreq = 2
+model = 0
+NSsites = [ 0 ]
+kappa = 4.54006
+fix_alpha = 1
+RateAncestor = 0
+cleandata = 1

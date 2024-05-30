@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="new">
+    <file>ui/ziyuan/converted_tubiao.png</file>
+    <file>ui/ziyuan/converted_tupian1.png</file>
+  </qresource>
+</RCC>

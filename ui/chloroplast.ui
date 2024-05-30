@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>chloroplast_analysis_system</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="uploadName">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Upload Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="uploadID">
+       <property name="placeholderText">
+        <string>Upload ID</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="newSpec">
+       <property name="text">
+        <string>new Spec</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="read">
+       <property name="text">
+        <string>读取NCBI文件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pair">
+       <property name="text">
+        <string>初始化物种分类信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="download">
+       <property name="text">
+        <string>下载所有物种序列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="downloadSelected">
+       <property name="text">
+        <string>下载选中物种序列</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string>物种信息</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="folder">
+         <property name="text">
+          <string>选择基因所在文件夹</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="selection">
+         <property name="text">
+          <string>加入候选</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="showSelection">
+         <property name="text">
+          <string>查看候选基因</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteSelection">
+         <property name="text">
+          <string>删除所有候选</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="split">
+         <property name="text">
+          <string>分开基因</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="pairWay">
+       <item>
+        <property name="text">
+         <string>MAFFT</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ClustalW</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Muscle</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="pairWork">
+       <item>
+        <property name="text">
+         <string>Conserved Sequence</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Complete genome</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pairRes">
+       <property name="text">
+        <string>生成比对结果</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="seeAlignRes">
+       <property name="text">
+        <string>查看比对结果</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editTree">
+       <property name="text">
+        <string>树编辑</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
